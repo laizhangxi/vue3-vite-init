@@ -1,19 +1,12 @@
 <template>
-  <div @click="sendRequest" class="f-c-c">home</div>
+  <div @click="toPage" class="f-c-c">去about页面</div>
 </template>
 
 <script setup lang="ts">
-import { login } from "@/http/api"
-const sendRequest = () => {
-  let params = {
-    account: 'system',
-    password: 'c4ca4238a0b923820dcc509a6f75849b'
-  }
-  login(params).then((res: any) => {
-    if (res) {
-      localStorage.setItem("token", res)
-    }
-  })
+import router from '@/router';
+
+const toPage = () => {
+  router.push({name: 'about'})
 }
 </script>
 

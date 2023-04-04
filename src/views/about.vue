@@ -1,5 +1,5 @@
 <template>
-  <div @click="sendRequest" class="f-c-c">about</div>
+  <div @click="sendRequest" class="f-c-c">发送请求</div>
 </template>
 
 <script setup lang="ts">
