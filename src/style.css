@@ -1,0 +1,26 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  line-height: 1;
+  margin: 0;
+  font-family: "Arial", "Microsoft YaHei", "PingFangSC-Regular", "SimSun", "宋体";
+}
+#app {
+  height: 100%;
+}
+
+
+.f {
+  display: flex;
+}
+.f-c {
+  display: flex;
+  align-items: center;
+}
+.f-c-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
