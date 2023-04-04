@@ -20,8 +20,13 @@ export default defineConfig({
       '/api': {
         target: 'http://localhost:51735',//代理的地址
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')//这里的/需要转义
-      }
+        rewrite: (path) => path.replace(/^\/api/, '')
+      },
+      '/online': {
+        target: 'http://localhost:51735',//代理的地址
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/online/, '')
+      },
     }
   }
 })

@@ -1,5 +1,12 @@
+let baseUrl = ''
+if (process.env.NODE_ENV === 'development') {
+	baseUrl = '/api'
+}
+if (process.env.NODE_ENV === 'production') {
+	baseUrl = '/online'
+}
 const serverConfig = {
-  baseURL: "/api", // 请求基础地址,可根据环境自定义
+  baseURL: baseUrl,
   useTokenAuthorization: true, // 是否开启 token 认证
 };
 export default serverConfig;
